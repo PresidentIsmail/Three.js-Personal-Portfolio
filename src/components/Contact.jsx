@@ -15,7 +15,6 @@ const Contact = () => {
     email: "",
     message: "",
   });
-
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
@@ -93,7 +92,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="Enter your name?"
-              className="rounded-lg border  border-secondary bg-tertiary py-4 px-6 font-medium text-white  placeholder:text-secondary"
+              className="rounded-lg border  border-secondary bg-tertiary py-4 px-6 font-medium text-white  placeholder:text-secondary/50"
             />
           </label>
           <label className="flex w-full flex-col">
@@ -104,24 +103,27 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="Enter you email address?"
-              className="rounded-lg border border-secondary bg-tertiary py-4 px-6  font-medium text-white placeholder:text-secondary"
+              className="rounded-lg border border-secondary bg-tertiary py-4 px-6  font-medium text-white placeholder:text-secondary/50"
             />
           </label>
           <label className="flex w-full flex-col">
-            <span className="mb-4 font-medium text-white">Your Message</span>
+            <span className="mb-4 font-medium text-white">Your Message *</span>
             <textarea
               rows={7}
               name="message"
               value={form.message}
               onChange={handleChange}
               placeholder="Hi, I think we need a design system for our products at Company X. How soon can you hop on to discuss this?"
-              className="rounded-lg border border-secondary bg-tertiary py-4 px-6  font-medium text-white placeholder:text-secondary"
+              className="rounded-lg border border-secondary bg-tertiary py-4 px-6  font-medium text-white placeholder:text-secondary/50"
             />
           </label>
 
           <button
             type="submit"
-            className=" w-full rounded-xl border border-secondary  bg-tertiary py-3 px-8 font-bold text-white shadow-md shadow-primary"
+            disabled={!form.message.trim()} // Check if isActive is false or if the message input is empty or only contains whitespace
+            className={`${
+              !form.message.trim() ? "cursor-not-allowed" : ""
+            }  w-full rounded-xl border border-secondary  bg-tertiary py-3 px-8 font-bold text-white shadow-md shadow-primary`}
           >
             {loading ? "Sending..." : "Send"}
           </button>
