@@ -33,6 +33,7 @@ import tesla from "./company/tesla.png";
 import tripguide from "./tripguide.png";
 import serengeti from "./serengeti_walkthrough.gif";
 import crispycanvas from "./crispycanvas_walkthrough.png";
+import globetracer from "./globetracer_walkthrough.gif";
 
 export {
   logo,
@@ -67,4 +68,5 @@ export {
   tripguide,
   serengeti,
   crispycanvas,
+  globetracer,
 };

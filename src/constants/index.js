@@ -21,6 +21,7 @@ import {
   tripguide,
   serengeti,
   crispycanvas,
+  globetracer,
 } from "../assets";
 
 export const navLinks = [
@@ -241,25 +242,25 @@ const projects = [
     live_site_link: "https://crispy-canvas.netlify.app/",
   },
   {
-    name: "Trip Guide",
+    name: "Globe Tracer",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Globe Tracer is a web application that allows users to track all the places they have traveled to around the world. With an interactive map and a user-friendly interface, users can easily record their travel experiences and view them at any time.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "React",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "Jsonserver",
       },
       {
         name: "css",
-        color: "pink-text-gradient",
+      },
+      {
+        name: "Mapbox",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: globetracer,
+    source_code_link: "https://github.com/PresidentIsmail/Globe-Tracer",
   },
 ];
 
