@@ -1,4 +1,4 @@
-# Personal Portfolio site for [Ismail Shaikhnag](https://www.ismailportfolioplayground.com)
+# Personal Portfolio site for [Ismail Shaikhnag](https://ismailshaikhnag.vercel.app/)
 
 Welcome to this portfolio repository, showcasing my web development and design projects. Explore a variety of React-powered wonders, full-stack adventures, and real-world showcases, as I continuously push the boundaries of innovation. 
 
@@ -13,4 +13,4 @@ Welcome to this portfolio repository, showcasing my web development and design p
 
 ## Connect with Me
 
-🌐 [Visit my Website](https://www.ismailportfolioplayground.com)
+🌐 [Visit my Website](https://ismailshaikhnag.vercel.app/)
