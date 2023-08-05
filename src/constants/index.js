@@ -18,9 +18,9 @@ import {
   starbucks,
   tesla,
   shopify,
-  jobit,
   tripguide,
   serengeti,
+  crispycanvas,
 } from "../assets";
 
 export const navLinks = [
@@ -222,25 +222,23 @@ const projects = [
     live_site_link: "https://serengeti-sky-lodges.vercel.app/",
   },
   {
-    name: "Job IT",
+    name: "Crispy Canvas",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A React ordering application that lets you order your favourite pizzas while effortlessly managing orders and accessing order history. With my expertise, I crafted a seamless user experience that tantalizes taste buds and showcases my skills in front-end development. 🍕🎨",
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
       },
       {
         name: "restapi",
-        color: "green-text-gradient",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "css",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: crispycanvas,
+    source_code_link: "https://github.com/PresidentIsmail/Crispy-Canvas",
+    live_site_link: "https://crispy-canvas.netlify.app/",
   },
   {
     name: "Trip Guide",
