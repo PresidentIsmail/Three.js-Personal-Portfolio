@@ -73,7 +73,7 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="w-[750px] min-w-[600px] flex-[0.75] rounded-2xl bg-black-100 p-8 lg:w-[600px]"
+        className="min-w-[400px]  flex-[0.75] rounded-2xl bg-black-100 p-8 lg:min-w-[600px]"
       >
         <h3 className={styles.sectionHeadText}>Get in touch.</h3>
         <p className={styles.sectionSubText}>
@@ -83,9 +83,9 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
+          className="mt-12 flex flex-col items-start gap-8 lg:items-stretch"
         >
-          <label className="flex flex-col">
+          <label className="flex w-full flex-col">
             <span className="mb-4 font-medium text-white">Your Name</span>
             <input
               type="text"
@@ -93,10 +93,10 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="Enter your name?"
-              className="rounded-lg border border-secondary bg-tertiary py-4 px-6 font-medium text-white  placeholder:text-secondary"
+              className="rounded-lg border  border-secondary bg-tertiary py-4 px-6 font-medium text-white  placeholder:text-secondary"
             />
           </label>
-          <label className="flex flex-col">
+          <label className="flex w-full flex-col">
             <span className="mb-4 font-medium text-white">Your email</span>
             <input
               type="email"
@@ -107,7 +107,7 @@ const Contact = () => {
               className="rounded-lg border border-secondary bg-tertiary py-4 px-6  font-medium text-white placeholder:text-secondary"
             />
           </label>
-          <label className="flex flex-col">
+          <label className="flex w-full flex-col">
             <span className="mb-4 font-medium text-white">Your Message</span>
             <textarea
               rows={7}
@@ -121,7 +121,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            className=" rounded-xl border border-secondary  bg-tertiary py-3 px-8 font-bold text-white shadow-md shadow-primary"
+            className=" w-full rounded-xl border border-secondary  bg-tertiary py-3 px-8 font-bold text-white shadow-md shadow-primary"
           >
             {loading ? "Sending..." : "Send"}
           </button>
@@ -130,7 +130,7 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="h-[350px] w-[800px] min-w-[800px] md:h-[550px] lg:h-auto lg:flex-1"
+        className="flex h-[350px] w-[800px] min-w-[800px] self-center md:h-[550px] lg:h-auto lg:flex-1 lg:self-auto"
       >
         <EarthCanvas />
       </motion.div>
