@@ -15,6 +15,10 @@ import {
   git,
   figma,
   docker,
+  github,
+  github_dark,
+  supabase,
+  nextjs,
   meta,
   starbucks,
   tesla,
@@ -42,20 +46,32 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend",
     icon: web,
+    content: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "TailwindCSS",
+      "Shadcn",
+      "MUI",
+    ],
   },
   {
-    title: "React Native Developer",
+    title: "Backend",
     icon: mobile,
+    content: ["Node.js", "Express", "Next.js", "Python"],
   },
   {
-    title: "Backend Developer",
+    title: "Database",
     icon: backend,
+    content: ["MongoDB", "Supabase"],
   },
   {
-    title: "Content Creator",
+    title: "Dev Tools",
     icon: creator,
+    content: ["Git", "Bash", "VS Code"],
   },
 ];
 
@@ -73,16 +89,12 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Next JS",
+    icon: nextjs,
   },
   {
     name: "Tailwind CSS",
@@ -97,20 +109,16 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "GitHub",
+    icon: github_dark,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Supabase",
+    icon: supabase,
   },
 ];
 
