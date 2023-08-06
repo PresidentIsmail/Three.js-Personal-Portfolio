@@ -4,8 +4,6 @@ import { Toaster } from "react-hot-toast";
 import {
   About,
   Contact,
-  Experience,
-  Feedbacks,
   Hero,
   Navbar,
   Tech,

@@ -31,9 +31,16 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import tripguide from "./tripguide.png";
-import serengeti from "./serengeti_walkthrough.gif";
-import crispycanvas from "./crispycanvas_walkthrough.png";
-import globetracer from "./globetracer_walkthrough.gif";
+// import serengeti from "./serengeti_walkthrough.gif";
+// import crispycanvas from "./crispycanvas_walkthrough.png";
+// import globetracer from "./globetracer_walkthrough.gif";
+
+import serengeti_mp4 from "./project-walkthoughs/mp4/serengeti_walkthrough.mp4";
+import crispycanvas_mp4 from "./project-walkthoughs/mp4/crispycanvas_walkthrough.mp4";
+import globetracer_mp4 from "./project-walkthoughs/mp4/globetracer_walkthrough.mp4";
+import serengeti_webm from "./project-walkthoughs/webm/serengeti_walkthrough.webm";
+import crispycanvas_webm from "./project-walkthoughs/webm/crispycanvas_walkthrough.webm";
+import globetracer_webm from "./project-walkthoughs/webm/globetracer_walkthrough.webm";
 
 export {
   logo,
@@ -66,7 +73,13 @@ export {
   starbucks,
   tesla,
   tripguide,
-  serengeti,
-  crispycanvas,
-  globetracer,
+  // serengeti,
+  // crispycanvas,
+  // globetracer,
+  serengeti_mp4,
+  crispycanvas_mp4,
+  globetracer_mp4,
+  serengeti_webm,
+  crispycanvas_webm,
+  globetracer_webm,
 };

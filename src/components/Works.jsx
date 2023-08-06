@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -13,7 +13,8 @@ const ProjectCard = ({
   name,
   description,
   tags,
-  image,
+  webm,
+  mp4,
   source_code_link,
   live_site_link,
 }) => {
@@ -28,11 +29,18 @@ const ProjectCard = ({
         className="w-full rounded-2xl bg-tertiary p-5 sm:w-[360px]"
       >
         <div className="relative h-[230px] w-full">
-          <img
-            src={image}
-            alt="project_image"
-            className="h-full w-full rounded-2xl object-cover"
-          />
+          <Suspense fallback={<Loader />}>
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="h-full w-full rounded-2xl object-cover"
+            >
+              <source src={webm} type="video/webm" />
+              <source src={mp4} type="video/mp4" />
+            </video>
+          </Suspense>
 
           <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
             <div
@@ -177,8 +185,8 @@ const Link = () => {
       aria-label="GitHub"
     >
       <span>
-        GitHub 
-        <span class="inline-block ml-1">
+        GitHub
+        <span class="ml-1 inline-block">
           repository
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -196,6 +204,22 @@ const Link = () => {
         </span>
       </span>
     </a>
+  );
+};
+
+// animated loading indicator for the project cards
+const Loader = () => {
+  return (
+    <div className="flex flex-wrap gap-7">
+      {[...Array(3)].map((_, index) => (
+        <motion.div
+          key={`loader-${index}`}
+          variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+        >
+          <CanvasLoader />
+        </motion.div>
+      ))}
+    </div>
   );
 };
 
