@@ -28,7 +28,11 @@ const Hero = () => {
       <ComputersCanvas />
 
       <div className="absolute bottom-4 z-10 flex w-full items-center justify-center  ">
-        <a href="#about" className="flex flex-col items-center">
+        <a
+          href="#about"
+          className="flex flex-col items-center"
+          aria-label="Scroll to About Section"
+        >
           <div className="flex h-[64px] w-[35px] items-start justify-center rounded-3xl border-4 border-secondary p-2">
             <motion.div
               animate={{
