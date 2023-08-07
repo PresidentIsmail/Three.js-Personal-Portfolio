@@ -62,6 +62,7 @@ const Navbar = () => {
             src={logo_icon}
             alt="logo"
             className="h-12 w-auto object-contain"
+            height={48}
           />
         </Link>
 
